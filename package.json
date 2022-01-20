@@ -1,0 +1,12 @@
+{
+  "name": "account_bank",
+  "version": "1.0.0",
+  "description": "for traning",
+  "main": "instanceObjects.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Raphael",
+  "license": "ISC",
+  "type": "module"
+}
