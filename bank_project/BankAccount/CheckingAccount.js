@@ -7,7 +7,7 @@ export class CheckingAccount extends Account {
     }
 
     toRecieve(cash){
-        this.cash += cash
+        this.deposit(cash)
     }
     
 }

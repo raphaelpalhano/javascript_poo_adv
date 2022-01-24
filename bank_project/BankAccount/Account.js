@@ -21,15 +21,19 @@ export class Account{
         return `Data account: \n Agency: ${this.#agency} \n Account: ${this.#account}`
     }
 
-    set cash(value){
+    deposit(value){
         if(value <= 0) {  return }
 
         this.#cashBank += value
     }
 
     withdraw(value){
-        if(this.#cashBank >= value){this.#cashBank -=value}
-        return this.#cashBank - value
+        if(this.#cashBank >= value){
+            this.#cashBank -=value
+            return this.#cashBank - value
+        }
+        return 0;
+        
     }
 
 
@@ -42,7 +46,8 @@ export class Account{
             return
         }
         this.withdraw(cash)
-        user.cash = cash
+        user.deposit(cash)
     }
+    
     
 }
